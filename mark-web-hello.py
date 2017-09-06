@@ -6,7 +6,7 @@ def hello_world(environ, start_response):
     start_response(status, headers)
     return ['Hello World this is Mark Speaking - you know we come in peace!']
 	
-httpd = make_server('', 80, hello_world)
+httpd = make_server('', 8080, hello_world)
 
 print 'Serving on port 80'
 
