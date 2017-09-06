@@ -4,7 +4,7 @@ def hello_world(environ, start_response):
     status = '200 ok'
     headers = [('Content-type', 'teext/plain')]
     start_response(status, headers)
-    return ['Hello World this is Mark Speaking - we come in peace!']
+    return ['Hello World this is Mark Speaking - you know we come in peace!']
 	
 httpd = make_server('', 80, hello_world)
 
